@@ -10,6 +10,9 @@ Object.merge(Sandbox.prototype, {
 		this.exec('src/sandbox-clean.js');
 		this.exec('lib/wrench17.js');
 	},
+	compileFunction: function(source, lineOffset) {
+		return this.context.compileFunction(this.global, source, "<fn:"+source.substr(0,32)+">", 1+lineOffset, null);
+	},
 	eval: function(source) {
 		return this.context.evaluateString(this.global, source, "<eval:"+source.substr(0,32)+">", 1, null);
 	},
