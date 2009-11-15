@@ -1,0 +1,24 @@
+{
+	"body": {
+		"class": "body",
+		"type": "wood"
+	},
+	"board": {
+		"class": "board",
+		"type": "hardwired"
+	},
+	"powersource": {
+		"class": "battery",
+		"type": "v12"
+	},
+	"engine": {
+		"class": "engine",
+		"type": "electric-treads",
+		"power": "powersource",
+		"treads": "treads"
+	},
+	"treads": {
+		"class": "treads",
+		"type": "steel"
+	}
+}
